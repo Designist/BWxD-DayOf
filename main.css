@@ -1,0 +1,363 @@
+/* Import fonts */
+@font-face {
+    font-family: 'Calibre';
+    src: url("fonts/CalibreWeb-Semibold.woff");
+
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: url("fonts/CalibreWeb-Bold.woff");
+
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: url("fonts/CalibreWeb-Medium.woff");
+
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: url("fonts/CalibreWeb-Regular.woff");
+
+    font-weight: 300;
+}
+/* End fonts */
+
+body {
+	background-color: rgb(249,249,249);
+	margin: 0px;
+	font-family: 'Calibre';
+	color: #242157;
+	font-weight: 300;
+}
+
+#navbar {
+	height: 70px;
+	box-shadow: 0px 3px 2px #888888;
+	width: 100%;
+}
+
+#nav_logo {
+	margin-top: 15px;
+	height: 40px;
+	margin-bottom: 15px;
+
+	float: left;
+	padding-left: 120px;
+}
+
+#nav_links {
+	float: right;
+	padding-right: 120px;
+	margin-top: 25px;
+	margin-bottom: 24px;
+}
+
+#nav_links > a {
+	font-size: 1.1em;
+	color: #242157;
+	text-decoration: none;
+
+	padding-left: 60px;
+}
+
+#nav_links > a:hover {
+	font-weight: 500;
+}
+
+#banner {
+	background-color: #242157;
+	height: 489px;
+	padding-top: 70px;
+}
+
+#schedule {
+	margin-left: 120px;
+	margin-right: 120px;
+	overflow: hidden;
+}
+
+#schedule_tabs {
+	float: left;
+	padding-top: 115px;
+	font-size: 1.463em;
+	color: #BFBFBF;
+	margin-right: 94px;
+}
+
+.day_tab {
+	padding-bottom: 24px;
+	display: block;
+}
+
+.day_tab > a {
+	text-decoration: none;
+	color: #BFBFBF;
+}
+
+.selected_tab > a {
+	color: #242157;
+	font-weight: 500;
+}
+
+table {
+	margin-left: 94px;
+	margin-top: 70px;
+	border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #BFBFBF;
+}
+
+.time {
+	font-size: 1.463em;
+	min-width: 166px;
+	text-align: center;
+	font-weight: 300;
+	vertical-align: top;
+	padding-top: 40px;
+}
+
+.event {
+	width: 100%;
+	padding-top: 42px;
+	padding-bottom: 42px;
+}
+
+.icon {
+	float: left;
+	margin-left: 60px;
+	margin-right: 25px;
+	display: table-cell;
+}
+
+.icon > img {
+	height: 80px;
+}
+
+.info {
+	display: table-cell;
+}
+
+.title {
+	font-size: 1.711em;
+	font-weight: 300;
+	padding-bottom: 3px;
+	margin-top: -6px;
+	margin-bottom: 4px;
+}
+
+.location {
+	font-size: 1.211em;
+	font-weight: 700;
+}
+
+.details {
+	font-size: 1.211em;
+	font-weight: 300;
+	text-decoration: underline;
+}
+
+.details > a {
+	color: #242157;
+}
+
+.shown > a {
+	color: #00B5AD;
+}
+
+.details > a:hover {
+	color: #00B5AD;
+}
+
+.lunch {
+	font-size: 1.463em;
+	font-weight: 300;
+	text-align: center;
+	color: rgb(249,249,249);
+	background-color: #242157;
+}
+
+.lunch_time, .lunch_event {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.lunch_event {
+	text-align: left;
+	padding-left: 165px;
+}
+
+.second {
+	padding-top: 0px;
+}
+
+.third {
+	padding-top: 0;
+	padding-bottom: 126px;
+}
+
+.fourth {
+	padding-top: 0;
+	padding-bottom: 126px;
+}
+
+#mapcontainer {
+	padding-top: 120px;
+	margin-left: 120px;
+	margin-right: 120px;
+	/*margin-bottom: 40px;*/
+}
+
+.dropdown {
+	text-decoration: none;
+	font-size: 1.0em;
+/*	margin-left: 165px;*/
+	margin-top: 10px;
+	font-weight: 300;
+}
+
+.marker {
+	height: 16px;
+	width: 16px;
+}
+
+.navymarker {
+  background-image: url('images/navy.svg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.redmarker {
+  background-image: url('images/red.svg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.tealmarker {
+  background-image: url('images/teal.svg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.whitemarker {
+  background-image: url('images/white.svg');
+  background-size: cover;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navbar { 
+	position: fixed;
+	background: rgb(249,249,249);
+	z-index: 20;
+}
+
+#challenge {
+	padding-top: 80px;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+h1 {
+	font-size: 3.4222em;
+	font-weight: 500;
+}
+
+#challenge > img {
+	width: 100%;
+}
+
+h2 {
+	font-size: 2.4444em;
+	font-weight: 300;
+}
+
+#leftcol {
+	width: calc(50% - 50px);
+	float: left;
+	margin-right: 100px;
+}
+
+#rightcol {
+	width: calc(50% - 50px);
+	float: left;
+}
+
+p {
+	font-size: 1.2222em;
+}
+
+#rightcol a {
+	color: #00B5AD;
+	text-decoration: none;
+}
+
+#rightcol a:hover {
+	text-decoration: underline;
+}
+
+#footer {
+	margin-top: 120px;
+	height: 120px;
+	width: 100%;
+	background: #242157;
+	display: inline-block;
+}
+
+#footer::before {
+	content: " ";
+	display: inline-block;
+	height: 100%;
+	width: 1%;
+	vertical-align: middle;
+}
+
+#footertext {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 107px;
+}
+
+#footer img {
+	margin-right: 27px;
+}
+
+@media (max-width: 900px) {
+	#navbar {
+		white-space: nowrap;
+		overflow: scroll;
+	}
+	#nav_links {
+		float: none;
+		padding-right: 20px;
+	}
+	#nav_links > a {
+		padding-left: 35px;
+	}
+	#nav_logo {
+		padding-left: 20px
+	}
+	#schedule {
+		display: none;
+	}
+}
