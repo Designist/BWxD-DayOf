@@ -340,6 +340,7 @@ p {
 
 #footer img {
 	margin-right: 27px;
+	height: 40px;
 }
 
 @media (max-width: 900px) {
@@ -352,12 +353,55 @@ p {
 		padding-right: 20px;
 	}
 	#nav_links > a {
-		padding-left: 35px;
+		padding-left: 10%
 	}
 	#nav_logo {
 		padding-left: 20px
 	}
 	#schedule {
 		display: none;
+	}
+	#mapcontainer {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding-top: 40px;
+	}
+	#challenge {
+		padding-top: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	h1 {
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 1.833em;
+	}
+	#leftcol, #rightcol {
+		margin-left: 20px;
+		margin-right: 20px;
+		float: none;
+		width: calc(100% - 40px);
+	}
+	h2 {
+		font-size: 1.466em;
+	}
+	p {
+		font-size: 1.0em;
+	}
+	#banner {
+		height: 60vh;
+	}
+	#footer {
+		margin-top: 40px;
+		height: 60px;
+		width: 100%;
+		background: #242157;
+		display: inline-block;
+	}
+	#footer img {
+		height: 24px;
+	}
+	#footertext {
+		margin-left: 16px;
 	}
 }
