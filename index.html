@@ -44,40 +44,50 @@
 					<tr>
 						<td class="time">10:00 A</td>
 						<td class="event">
-							<div class="icon">
-								<img src="images/registration.svg">
+						<div class="icon">
+								<img src="images/registration.png">
 							</div>
 							<div class="info">
 								<div class="title">Registration</div>
-								<div class="location">Frazier Terrace <a href="https://www.google.com/maps/dir//223+Benefit+St,+Providence,+RI+02903/@41.82668,-71.4070664,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x89e44517c5288c67:0x99e04ae220ef1870!2m2!1d-71.4069713!2d41.8267199"><img class="marker" src="images/navy.svg"></img></a></div>
+								<div class="location">
+						Frazier Terrace
+									<a href="https://www.google.com/maps/dir//223+Benefit+St,+Providence,+RI+02903/@41.82668,-71.4070664,96m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x89e44517c5288c67:0x99e04ae220ef1870!2m2!1d-71.4069713!2d41.8267199">
+						<img class="marker" src="images/navy.svg"></img>
+						</a>
+						</div>
 								<div class="description">
-									<div id="a2" class="details"><a href="javascript:void(0)" onclick="dropdown('#a', '#a2')">Details</a></div>
+									<div id="a2" class="details">
+						<a href="javascript:void(0)" onclick="dropdown('#a', '#a2')">Details</a>
+						</div>
 									<div class="dropdown" id="a" style="display: none;">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-									</div>
+										First thing’s first! Get your name badge that will grant you access to our full event! Grab your goodie bag with Soylent, Field Notes, Dopper Bottle, and more. If you have any questions, please don’t hesitate to ask. 		</div>
 								</div>
-							</div>
+						</div>
 						</td>
 					</tr>
 					<tr>
 						<td class="time">11:00 A</td>
 						<td class="event">
-							<div class="icon">
-								<img src="images/lecture.svg ">
+						<div class="icon">
+								<img src="images/lecture.png">
 							</div>
 							<div class="info">
-								<div class="title">Keynote | Cynthia Smith</div>
-								<div class="location">Chace Metcalf Auditorium</div>
-								<div class="description"><div class="details">Details</div></div>
-							</div>
-						</td>
-					</tr>
-					<tr class="lunch">
-						<td class="lunch_time">12:00 P</td>
-						<td class="lunch_event">
-							<div id="lunch_title">
-								Lunch Break &mdash; Chace Terrace
-							</div>
+								<div class="title">Cynthia Smith | Design by the People for the People</div>
+								<div class="location">
+						RISD Museum | Chace Metcalf Auditorium
+						<a href="https://www.google.com/maps/dir//RISD+Museum,+Chace+Center+entrance,+20+N+Main+St,+Providence,+RI+02903/@41.8265822,-71.4073886,18z/data=!4m15!1m6!3m5!1s0x0:0x49112556d05817bc!2sRISD+Museum,+Chace+Center+entrance!8m2!3d41.8261062!4d-71.4079839!4m7!1m0!1m5!1m1!1s0x89e445164b5ec617:0x49112556d05817bc!2m2!1d-71.407984!2d41.826106">	 
+						<img class="marker" src="images/teal.svg"></img>
+						</a>
+						</div>
+								<div class="description">
+									<div id="c0" class="details">
+						<a href="javascript:void(0)" onclick="dropdown('#c1', '#c0')">Details</a>
+						</div>
+									<div class="dropdown" id="c1" style="display: none;">
+										Smith will explore the evolution of the exhibition series dedicated to socially responsible design that she organizes at Cooper Hewitt, Smithsonian Design Museum. The first show was conceived as a provocation to the design world to expand the notion of who designs, and her latest exhibition By the People: Designing a Better America focuses on collaborative designs that address widening inequities.
+									</div>
+								</div>
+						</div>
 						</td>
 					</tr>
 					<tr>
@@ -321,6 +331,17 @@
 				      title: 'Brown Main Green',
 				      description: 'Saturday/Sunday Registration'
 				    }
+				  },
+				  {
+				    type: 'Feature',
+				    geometry: {
+				      type: 'Point',
+				      coordinates: [-71.4026849, 41.8262423]
+				    },
+				    properties: {
+				      title: 'Sayles Hall',
+				      description: 'Saturday/Sunday Lunch'
+				    }
 				  }
 				]};
 
@@ -346,17 +367,6 @@
 				    properties: {
 				      title: 'The Steel Yard',
 				      description: 'Friday Night Social Event'
-				    }
-				  },
-				  {
-				    type: 'Feature',
-				    geometry: {
-				      type: 'Point',
-				      coordinates: [-71.4026849, 41.8262423]
-				    },
-				    properties: {
-				      title: 'Sayles Hall',
-				      description: 'Saturday/Sunday Lunch'
 				    }
 				  }
 				]};
@@ -442,9 +452,9 @@
 			</div>
 			<div id="footer">
 				<div id="footertext">
-					<a href="https://www.facebook.com/betterworldbydesign/"><img src="images/social/facebook.png"></a>
-					<a href="https://www.instagram.com/betterxdesign/"><img src="images/social/insta.png"></a>
-					<a href="https://twitter.com/betterxdesign?lang=en"><img src="images/social/twitter.png"></a>
+					<a href="https://www.facebook.com/betterworldbydesign/"><img src="images/social/facebook.svg"></a>
+					<a href="https://www.instagram.com/betterxdesign/"><img src="images/social/instagram.svg"></a>
+					<a href="https://twitter.com/betterxdesign?lang=en"><img src="images/social/twitter.svg"></a>
 				</div>
 				<span class="desktop" style="color: rgb(249,249,249);">Better World by Design Conference 2017</span>
 				<span class="mobile" style="color: rgb(249,249,249);">BWxD 2017: Sep. 22-24</span>

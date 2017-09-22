@@ -291,7 +291,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.4444em;
+	font-size: 2.1em;
 	font-weight: 300;
 }
 
@@ -350,7 +350,16 @@ p {
 	display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+	.icon {
+		margin-left: 40px;
+	}
+	.time {
+		min-width: 146px;
+	}
+}
+
+@media (max-width: 1000px) {
 	#navbar {
 		white-space: nowrap;
 		overflow: scroll;
@@ -465,7 +474,6 @@ p {
 	.location {
 		font-weight: 300;
 	}
-
 }
 
 /* Accordion styles */
@@ -543,3 +551,7 @@ input:checked ~ .tab-content {
 	border-bottom: 1px solid #BFBFBF;
 	padding-bottom: 0px;
 }
+
+.info {
+		padding-right: 40px;
+	}
