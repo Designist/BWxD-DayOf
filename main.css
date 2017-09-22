@@ -677,3 +677,8 @@ input:checked ~ .tab-content {
 		}
 	}}
 }
+
+.mobilelunch {
+	text-align: center;
+	padding-left: 0;
+}
