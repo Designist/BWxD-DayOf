@@ -447,7 +447,7 @@ p {
 	}
 }
 
-/* Acordeon styles */
+/* Accordion styles */
 .tab {
   position: relative;
   margin-bottom: 1px;
@@ -512,4 +512,13 @@ input[type=checkbox]:checked + label::after {
 }
 input[type=radio]:checked + label::after {
   transform: rotateX(180deg);
+}
+
+label {
+	font-weight: 300;
+}
+
+input:checked ~ .tab-content {
+	border-bottom: 1px solid #BFBFBF;
+	padding-bottom: 30px;
 }
