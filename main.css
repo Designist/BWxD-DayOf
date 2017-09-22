@@ -646,6 +646,7 @@ input:checked ~ .tab-content {
 	.info {
 		padding-right: 20px;
 	}
+
 }
 
 @media(max-height: 450px) {
