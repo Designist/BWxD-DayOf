@@ -679,7 +679,9 @@ input:checked ~ .tab-content {
 	}}
 }
 
-.mobilelunch {
+@media(min-width: 600px) {
+	.mobilelunch {
 	text-align: center;
 	padding-left: 0;
+	}
 }
